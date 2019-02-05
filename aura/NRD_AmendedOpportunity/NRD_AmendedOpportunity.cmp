@@ -1,0 +1,13 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" controller="NRD_AmendedProcessController" access="global">
+	<aura:attribute name="recordId" type="String"/>
+ 	
+	 <ui:inputSelect aura:Id="makeId" multiple="false" label="Select Type">
+
+        <ui:inputSelectOption label="Addendum" text="Addendum"/>
+        <ui:inputSelectOption label="Amendment" text="Amendment"/>
+     </ui:inputSelect>
+
+     <br/><br/>
+    <ui:button label="Select Proccess" />
+
+</aura:component>
